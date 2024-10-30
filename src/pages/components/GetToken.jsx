@@ -41,7 +41,7 @@ const GetToken = () => {
 
   return (
     <div>
-        {typeof window !== 'undefined' ? localStorage.getItem('token') !== null ? <Navigate to={'/dashboard'}></Navigate>: "" : ''}
+        <Navigate to={'/dashboard'}></Navigate>
     </div>
   )
 }
