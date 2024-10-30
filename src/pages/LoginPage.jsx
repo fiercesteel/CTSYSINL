@@ -13,7 +13,7 @@ const LoginPage = () => {
   })
   
   const CLIENT_ID = "46900a6aa6d64aea84beecbb70bec19b"
-  const REDIRECT_URI = "http://localhost:5000/redirect-dashboard"
+  const REDIRECT_URI = "https://mattsncheese.vercel.app/redirect-dashboard"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const SCOPE = "user-follow-read%20user-top-read%20user-library-read%20user-top-read%20playlist-read-private%20playlist-modify-public%20playlist-modify-private%20user-read-private%20user-read-recently-played"
   const RESPONSE_TYPE = "token"
