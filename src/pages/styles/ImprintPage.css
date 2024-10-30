@@ -1,0 +1,16 @@
+.imprint-container {
+    justify-self: center;
+    align-items: center;
+}
+.imprint-content {
+    padding: 1rem;
+    width: 60vw;
+}
+.imprint-break {
+    margin: 1rem 0;
+}
+.imprint-person {
+    margin: 0 0 2.5rem 0;
+    font-weight: lighter;
+    line-height: 2rem;
+}

@@ -1,0 +1,206 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* General container styling */
+  .dashboard-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  /* Control Panel styling */
+  .control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .limit-control, .type-control {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and input */
+  }
+  
+  .limit-control label,
+  .type-control label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .limit-control input,
+  .type-control select {
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .type-control select {
+    width: auto;
+    min-width: 120px; /* Ensures the select box is wide enough */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 20px; /* Adjust padding to make space for dropdown arrow */
+    background-image: none; /* Removes the default dropdown arrow */
+  }
+  
+  /* Custom search input styling */
+  .search-control {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .search-control input {
+    padding: 8px 12px;
+    padding-left: 30px; /* Space for search icon */
+    background-color: #ddd;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23666' stroke-width='2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='10' cy='10' r='6'/%3E%3Cline x1='14' y1='14' x2='20' y2='20'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Positioning the icon */
+    background-size: 16px; /* Set icon size */
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  
+  /* Styling for focus states */
+  .search-control input:focus {
+    outline: none;
+    box-shadow: 0 0 3px #21D760;
+  }
+  
+  /* Styling for focus states */
+  .limit-control input:focus,
+  .type-control select:focus,
+  .search-control input:focus {
+    outline: none;
+    box-shadow: 0 0 3px #21D760;
+  }
+  
+  /* Table styling */
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .custom-table th, 
+  .custom-table td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .custom-table th {
+    font-weight: bold;
+    background-color: #f7f7f7;
+  }
+  
+  .custom-table thead tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-table td input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  .custom-table thead tr th:first-child {
+    border-top: none;
+  }
+  
+  .track-duration-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .track-duration-header svg {
+    vertical-align: middle;
+  }
+  
+  .header-checkbox {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .track-duration-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .custom-table th:last-child,
+  .custom-table td:last-child {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .checkbox-input,
+  .header-checkbox {
+    margin: 0 auto;
+  }
+  
+  .track-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .control-panel {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .custom-table th, 
+    .custom-table td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .track-image {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .search-control input {
+      width: 100%;
+    }
+  }

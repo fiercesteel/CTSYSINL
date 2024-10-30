@@ -1,0 +1,22 @@
+.footer_container {
+    justify-self: center;
+    padding-bottom: 3rem;
+}
+.footer_content {
+    display: inline-block;
+    width: 60vw;
+    font-size: small
+}
+.footer_left {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.footer_right {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.link {
+    margin-left: auto;
+}

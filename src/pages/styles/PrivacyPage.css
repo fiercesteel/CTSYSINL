@@ -1,0 +1,19 @@
+.privacy-container {
+    justify-self: center;
+    align-items: center;
+}
+.privacy-content {
+    padding: 1rem;
+    width: 60vw;
+}
+.privacy-break {
+    margin: 1rem 0;
+}
+.privacy-person {
+    margin: 0 0 2.5rem 0;
+    font-weight: lighter;
+    line-height: 3rem;
+}
+h3 span {
+    font-weight: bold;
+}
