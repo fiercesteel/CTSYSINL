@@ -44,7 +44,7 @@ const Dashboard1 = () => {
     try {
       const { data } = await axios.get(`${apiLink}/me/tracks`, {
         headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
+            Authorization: `Bearer ${typeof window !== 'undefined' ? localStorage.getItem('token') : ''}`
         },
         params: {
             offset: 0,
@@ -62,7 +62,7 @@ const Dashboard1 = () => {
     try {
       const { data } = await axios.get(`${apiLink}/me/playlists`, {
         headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
+            Authorization: `Bearer ${typeof window !== 'undefined' ? localStorage.getItem('token') : ''}`
         },
         params: {
             offset: 0,
@@ -79,7 +79,7 @@ const Dashboard1 = () => {
     try {
       const { data } = await axios.get(`${apiLink}/me/following`, {
         headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
+            Authorization: `Bearer ${typeof window !== 'undefined' ? localStorage.getItem('token') : ''}`
         },
         params: {
             type: "artist",
@@ -97,7 +97,7 @@ const Dashboard1 = () => {
     try {
       const { data } = await axios.get(`${apiLink}/me/albums`, {
         headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
+            Authorization: `Bearer ${typeof window !== 'undefined' ? localStorage.getItem('token') : ''}`
         },
         params: {
             limit: 50,
